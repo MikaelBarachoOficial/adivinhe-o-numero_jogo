@@ -108,3 +108,10 @@ function conferirPalpite() {
 }
 
 envioPalpite.addEventListener('click', conferirPalpite);
+
+campoPalpite.onkeydown = tecla => {
+    console.log(tecla);
+    if (tecla.key === 'Enter'){
+        conferirPalpite();
+    }
+}
