@@ -107,6 +107,8 @@ function conferirPalpite() {
   }  
 }
 
+campoPalpite.focus();
+
 envioPalpite.addEventListener('click', conferirPalpite);
 
 campoPalpite.onkeydown = tecla => {
